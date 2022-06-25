@@ -31,8 +31,7 @@ return [
                     return [
                         'title' => $entry->title,
                         'homeIntro' => $entry->homeIntro,
-                        'balls' => 'sack',
-                        'matrix' => $bodyBlocks,
+                        'blocks' => $bodyBlocks,
                         'jsonUrl' => UrlHelper::url("homepage.json"),
                    ];
                 },
