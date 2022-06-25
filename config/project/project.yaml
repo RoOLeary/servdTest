@@ -1,0 +1,22 @@
+dateModified: 1656164357
+email:
+  fromEmail: roleary81@gmail.com
+  fromName: 'Servd Test'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    8e5b45c8-ee87-45ca-9bb0-d487dc8d6d89: Common
+    a09cd195-6ca6-450b-84ee-dc2e3c83ddf7: 'Servd Test'
+    bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: 'Servd Test'
+system:
+  edition: solo
+  live: true
+  name: 'Servd Test'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
