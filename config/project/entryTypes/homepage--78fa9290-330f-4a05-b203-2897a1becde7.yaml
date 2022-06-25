@@ -27,6 +27,16 @@ fieldLayouts:
             uid: ae8aca0a-9bee-4b1b-9a0c-8dd19f0b3bb2
             warning: null
             width: 100
+          -
+            fieldUid: 5ff08539-481e-4862-8dec-aa786e6170c0 # Home Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b5f947b-cf98-4831-a564-81a73266ae56
+            warning: null
+            width: 100
         name: Content
         uid: 2f6900ca-8d71-4719-be6b-c15d3fa5a10d
 handle: homepage
