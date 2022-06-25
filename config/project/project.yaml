@@ -1,4 +1,4 @@
-dateModified: 1656187506
+dateModified: 1656187965
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
@@ -11,7 +11,7 @@ meta:
     7f511051-af46-43d3-9ffa-a0259bbd18fa: Blocks # Blocks
     8e5b45c8-ee87-45ca-9bb0-d487dc8d6d89: Common # Common
     78fa9290-330f-4a05-b203-2897a1becde7: Homepage # Homepage
-    8757594e-e3ec-4549-a2e2-4c2d22c010b1: 'Public Schema'
+    8757594e-e3ec-4549-a2e2-4c2d22c010b1: 'Public Schema' # Public Schema
     30092255-4f34-4764-910d-5eb813a490ba: 'Component Two' # Component Two
     a09cd195-6ca6-450b-84ee-dc2e3c83ddf7: 'Servd Test' # Servd Test
     a3cc9794-e75d-4518-a9b8-5d8f50e49c6b: Heading # Heading
@@ -45,6 +45,10 @@ plugins:
       securityKey: ''
       suppressWarnings: '1'
       useLocalVolumes: false
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
 system:
   edition: pro
   live: true
