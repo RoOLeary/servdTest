@@ -1,4 +1,4 @@
-dateModified: 1656174043
+dateModified: 1656187382
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
@@ -45,7 +45,7 @@ plugins:
       suppressWarnings: '1'
       useLocalVolumes: false
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Servd Test'
   schemaVersion: 4.0.0.9
