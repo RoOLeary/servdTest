@@ -156,7 +156,12 @@
     <div id="modal">
         <div id="main">
             <div class="content">
-                <h1>Derp</h1>
+                {% set entry = craft.entries.section('homepage').one() %}
+                {% if entry %}
+                <h1>{{ entry.title }}</h1>
+                {% else %}
+                <h1>Wanker</h1>
+                {% endif %}
                 <p>Thanks for installing Craft CMS!</p>
                 <p>You’re looking at the <code>index.twig</code> template file located in your
                     <code>templates/</code> folder. Once you’re ready to start building out your site’s

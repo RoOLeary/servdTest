@@ -4,5 +4,5 @@ hasUrls: true
 language: en-US
 name: 'Servd Test'
 primary: true
-siteGroup: a09cd195-6ca6-450b-84ee-dc2e3c83ddf7
+siteGroup: a09cd195-6ca6-450b-84ee-dc2e3c83ddf7 # Servd Test
 sortOrder: 1

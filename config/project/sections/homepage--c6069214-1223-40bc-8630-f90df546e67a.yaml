@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: homepage
+name: Homepage
+propagationMethod: all
+siteSettings:
+  bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single
