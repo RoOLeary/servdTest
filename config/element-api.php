@@ -5,7 +5,7 @@ use craft\helpers\UrlHelper;
 
 return [
     'endpoints' => [
-        'homepage.json' => function() {
+        'api/homepage.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
