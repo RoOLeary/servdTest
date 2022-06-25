@@ -28,6 +28,8 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+    
 
+    'securityKey' => 'cGDaPKL0fbVj3BgJJDGS0XkTLApDIUzM',
     'enableGql' => true,
 ];
