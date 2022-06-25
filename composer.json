@@ -21,7 +21,7 @@
     "require": {
         "craftcms/cms": "^4.0.0.1",
         "craftcms/element-api": "^3.0",
-        "craftcms/redactor": "3.0.0",
+        "craftcms/redactor": "^3.0",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
