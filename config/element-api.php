@@ -165,6 +165,7 @@ return [
             ];
         },
 
+
         'api/category/tech.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
@@ -193,6 +194,36 @@ return [
                 },
             ];
         },
+
+        'api/category/<slug:{slug}>.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['section' => 'articles', 'relatedTo' => 83 ],
+                'elementsPerPage' => 10,
+                'transformer' => function(Entry $entry) {
+
+                    $articleCategory = $entry->category->one()->id;
+                    $relatedArticles = Entry::find()
+                        ->section('articles')
+                        ->relatedTo($articleCategory)
+                        ->limit(10)
+                        ->one()
+                        ->slug; 
+
+                    return [
+                        'title' => $entry->headline,
+                        'subHeadline' => $entry->subHeadline,
+                        'body' => $entry->articleBody,
+                        'category' => $relatedArticles,
+                        'catId' => $articleCategory,
+                        'jsonUrl' => UrlHelper::url("/api/category/{$entry->slug}.json"),
+                    
+                    ];
+                },
+            ];
+        },
+
 
         'api/articles/<slug:{slug}>.json' => function($slug) {
             return [
