@@ -1,57 +1,57 @@
 field: 7f511051-af46-43d3-9ffa-a0259bbd18fa # Blocks
 fieldLayouts:
-  5b6ab3db-8c53-4b7a-bc74-c26843d0a491:
+  c1237995-a341-4b21-bb84-4737529a65ec:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c0124204-08aa-4604-b0a9-5c52c2eb9d2a # Eyebrow
+            fieldUid: 68f49541-781b-46d3-8b29-c868d5f18eae
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 41081fb7-3118-4854-b55c-ba1b6dd74208
+            uid: b9893cff-de9d-4a91-8532-4d554d2b8513
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b213877f-9e92-461d-b918-67d4da9ac51b # Heading
+            fieldUid: 3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 340b01d6-f91b-4e2d-902b-bf567136d396
+            uid: 05ee9c1f-ae0e-41f0-9c76-613889f0a8ab
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 5948548d-5673-45d3-ac39-d6905acb7821 # Sub Heading
+            fieldUid: b35e421d-7d80-4773-a2fe-b0ec6f77a6d0
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 427dc8f2-df97-41bf-82c6-3f6c8ee450f0
+            uid: ae2e7bd2-f257-4978-9331-3b45c9b636b1
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: d5624a7b-345a-4d52-86ff-970174aa1d9b
+        uid: e52117cc-943e-441b-9a33-66af248624ac
         userCondition: null
 fields:
-  5948548d-5673-45d3-ac39-d6905acb7821: # Sub Heading
-    columnSuffix: zslzycvk
+  68f49541-781b-46d3-8b29-c868d5f18eae:
+    columnSuffix: yhkyrrrf
     contentColumnType: text
     fieldGroup: null
-    handle: subHeading
+    handle: faqHeading
     instructions: null
-    name: 'Sub Heading'
+    name: 'Faq Heading'
     searchable: false
     settings:
       byteLimit: null
@@ -65,13 +65,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b213877f-9e92-461d-b918-67d4da9ac51b: # Heading
-    columnSuffix: jgrumswn
+  3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1:
+    columnSuffix: zgxmvjvo
     contentColumnType: text
     fieldGroup: null
-    handle: heading
+    handle: faqLeadtext
     instructions: null
-    name: Heading
+    name: 'Faq Leadtext'
     searchable: false
     settings:
       byteLimit: null
@@ -85,26 +85,28 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c0124204-08aa-4604-b0a9-5c52c2eb9d2a: # Eyebrow
-    columnSuffix: rlanialb
-    contentColumnType: text
+  b35e421d-7d80-4773-a2fe-b0ec6f77a6d0:
+    columnSuffix: null
+    contentColumnType: string
     fieldGroup: null
-    handle: eyebrow
+    handle: faqs
     instructions: null
-    name: Eyebrow
+    name: Faqs
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
+      blockTypeFields: 0
+      changedFieldIndicator: 928948559
+      contentTable: '{{%stc_faqs}}'
+      fieldLayout: matrix
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
     translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-handle: hero
-name: Hero
-sortOrder: 1
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: faq
+name: Faq
+sortOrder: 5

@@ -31,22 +31,22 @@ return [
                                 'headline' => $block->headline,
                                 ];
                                 break;
-                            // case 'faq':
-                            //     $faqRows = [];
-                            //     foreach($block->faqs->all() as $row){
-                            //         $faqRows[] = [
-                            //             'question' => $row->question,
-                            //             'answer' => $row->answer,
-                            //         ];
-                            //     }
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'faq',
-                            //         'faqHeading' => $block->faqHeading,
-                            //         'faqLeadtext' => $block->faqLeadtext,
-                            //         'faqs' => $faqRows
-                            //     ];
-                            //     break;
+                            case 'faq':
+                                $faqRows = [];
+                                foreach($block->faqs->all() as $row){
+                                    $faqRows[] = [
+                                        'question' => $row->question,
+                                        'answer' => $row->answer,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'faq',
+                                    'faqHeading' => $block->faqHeading,
+                                    'faqLeadtext' => $block->faqLeadtext,
+                                    'faqs' => $faqRows
+                                ];
+                                break;
                             
                             // // case 'speakers':
                             // //     // $selectedSpeakers = [];

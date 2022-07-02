@@ -63,7 +63,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 496400181
+      changedFieldIndicator: 200172132
       columns:
         __assoc__:
           -
@@ -114,4 +114,4 @@ fields:
     type: verbb\supertable\fields\SuperTableField
 handle: imageSlider
 name: 'Image Slider'
-sortOrder: 5
+sortOrder: 3

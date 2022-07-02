@@ -43,4 +43,4 @@ fields:
     type: craft\fields\PlainText
 handle: header
 name: Header
-sortOrder: 4
+sortOrder: 2
