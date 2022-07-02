@@ -179,8 +179,7 @@ return [
                         ->section('articles')
                         ->relatedTo($articleCategory)
                         ->limit(10)
-                        ->one()
-                        ->slug; 
+                        ->all();
 
                     return [
                         'slug' => $entry->slug,
@@ -212,8 +211,7 @@ return [
                         ->section('articles')
                         ->relatedTo($articleCategory)
                         ->limit(10)
-                        ->one()
-                        ->slug; 
+                        ->all();
 
                     return [
                         'slug' => $entry->slug,
