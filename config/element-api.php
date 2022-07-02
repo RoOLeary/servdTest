@@ -182,22 +182,22 @@ return [
                                 'headline' => $block->headline,
                                 ];
                                 break;
-                            // case 'faq':
-                            //     $faqRows = [];
-                            //     foreach($block->faqs->all() as $row){
-                            //         $faqRows[] = [
-                            //             'question' => $row->question,
-                            //             'answer' => $row->answer,
-                            //         ];
-                            //     }
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'faq',
-                            //         'faqHeading' => $block->faqHeading,
-                            //         'faqLeadtext' => $block->faqLeadtext,
-                            //         'faqs' => $faqRows
-                            //     ];
-                            //     break;
+                            case 'faq':
+                                $faqRows = [];
+                                foreach($block->faqs->all() as $row){
+                                    $faqRows[] = [
+                                        'question' => $row->question,
+                                        'answer' => $row->answer,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'faq',
+                                    'faqHeading' => $block->faqHeading,
+                                    'faqLeadtext' => $block->faqLeadtext,
+                                    'faqs' => $faqRows
+                                ];
+                                break;
                             
                             // // case 'speakers':
                             // //     // $selectedSpeakers = [];
@@ -336,22 +336,22 @@ return [
                                     'headline' => $block->headline,
                                 ];
                             break;
-                            // case 'faq':
-                            //     $faqRows = [];
-                            //     foreach($block->faqs->all() as $row){
-                            //         $faqRows[] = [
-                            //             'question' => $row->question,
-                            //             'answer' => $row->answer,
-                            //         ];
-                            //     }
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'faq',
-                            //         'faqHeading' => $block->faqHeading,
-                            //         'faqLeadtext' => $block->faqLeadtext,
-                            //         'faqs' => $faqRows
-                            //     ];
-                            // break;
+                            case 'faq':
+                                $faqRows = [];
+                                foreach($block->faqs->all() as $row){
+                                    $faqRows[] = [
+                                        'question' => $row->question,
+                                        'answer' => $row->answer,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'faq',
+                                    'faqHeading' => $block->faqHeading,
+                                    'faqLeadtext' => $block->faqLeadtext,
+                                    'faqs' => $faqRows
+                                ];
+                            break;
                             
                             // case 'speakers':
                             //     // $selectedSpeakers = [];
@@ -377,14 +377,14 @@ return [
                             //         // 'speakers' => $selectedSpeakers
                             //     ];
                             //     break;
-                            // case 'video':
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'video',
-                            //         'videoTitle' => $block->videoTitle,
-                            //         'videoEmbedCode' => $block->videoEmbedCode,
-                            //     ];
-                            // break;
+                            case 'video':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'video',
+                                    'videoTitle' => $block->videoTitle,
+                                    'videoEmbedCode' => $block->videoEmbedCode,
+                                ];
+                            break;
                             case 'imageSlider':
                                 $SuperTableRows = [];
                                 foreach ($block->sliderMatrix->all() as $row){
