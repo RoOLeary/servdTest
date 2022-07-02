@@ -1,0 +1,78 @@
+field: 7f511051-af46-43d3-9ffa-a0259bbd18fa # Blocks
+fieldLayouts:
+  6cc0a8c3-13a3-4398-b6d0-f7c7526d2897:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 84fc8c91-214d-4e5f-a1d3-a391f4c1ca9f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: edd3c90d-f87b-41e7-9d42-6793d8092d47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f83e2506-c0b6-49e5-a16e-3581ba01032a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc2da523-4351-450a-97c9-4fd73d44ca89
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 89f131f1-343d-45d5-8d70-5783a43a051b
+        userCondition: null
+fields:
+  84fc8c91-214d-4e5f-a1d3-a391f4c1ca9f:
+    columnSuffix: wiaffocd
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoTitle
+    instructions: null
+    name: 'Video Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f83e2506-c0b6-49e5-a16e-3581ba01032a:
+    columnSuffix: ergzpjgx
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoEmbedCode
+    instructions: null
+    name: 'Video Embed Code'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: video
+name: Video
+sortOrder: 6

@@ -1,33 +1,33 @@
 field: 7f511051-af46-43d3-9ffa-a0259bbd18fa # Blocks
 fieldLayouts:
-  ce55d5dd-b205-4fbd-81ee-ddad531aef79:
+  5d340bdc-e021-4b46-9b4a-3e5bffb84e03:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: a3cc9794-e75d-4518-a9b8-5d8f50e49c6b # Heading
+            fieldUid: 7c6328bf-ece2-4e54-97b1-4ac2218c9a3d # Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e3aac75d-99b0-49ce-ae1b-923b013999da
+            uid: 4fb669e9-fdd3-416f-b3ec-432f8197556e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 53cd166f-aafc-411e-af32-6e9cf19b67a8
+        uid: 9e437fca-1e82-45c8-93e0-9f1605ee6be6
         userCondition: null
 fields:
-  a3cc9794-e75d-4518-a9b8-5d8f50e49c6b: # Heading
-    columnSuffix: hlqlxhjj
+  7c6328bf-ece2-4e54-97b1-4ac2218c9a3d: # Headline
+    columnSuffix: bbntacfx
     contentColumnType: text
     fieldGroup: null
-    handle: heading
+    handle: headline
     instructions: null
-    name: Heading
+    name: Headline
     searchable: false
     settings:
       byteLimit: null
@@ -41,6 +41,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: componentOne
-name: 'Component One'
-sortOrder: 1
+handle: header
+name: Header
+sortOrder: 4

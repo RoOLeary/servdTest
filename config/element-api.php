@@ -67,7 +67,7 @@ return [
                             case 'hero':
                                 $bodyBlocks[] = [
                                     'blockType' => 'hero',
-                                    'unitId' => $block->unitId,
+                                    'uid' => $block->uid,
                                     'eyebrow' => $block->eyebrow,
                                     'heading' => $block->heading,
                                     'subHeading' => $block->subHeading
@@ -121,32 +121,32 @@ return [
                             // //         // 'speakers' => $selectedSpeakers
                             // //     ];
                             // //     break;
-                            // case 'video':
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'video',
-                            //         'videoTitle' => $block->videoTitle,
-                            //         'videoEmbedCode' => $block->videoEmbedCode,
-                            //     ];
-                            //     break;
-                            // case 'imageSlider':
-                            //     $SuperTableRows = [];
-                            //     foreach ($block->sliderMatrix->all() as $row){
-                            //         $SuperTableRows[] = [
-                            //             'textSub' => $row->textSub,
-                            //             'textHeading' => $row->textHeading,
-                            //             'textBackground' => $row->textBackground,
-                            //             'slideImage' => $row->slideImage,
-                            //             'slideColor' => $row->slideColor->value,
-                            //         ];
-                            //     }
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'imageSlider',
-                            //         'sliderTitle' => $block->sliderTitle,
-                            //         'sliderMatrix' => $SuperTableRows,
-                            //     ];
-                            //     break;
+                            case 'video':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'video',
+                                    'videoTitle' => $block->videoTitle,
+                                    'videoEmbedCode' => $block->videoEmbedCode,
+                                ];
+                                break;
+                            case 'imageSlider':
+                                $SuperTableRows = [];
+                                foreach ($block->sliderMatrix->all() as $row){
+                                    $SuperTableRows[] = [
+                                        'textSub' => $row->textSub,
+                                        'textHeading' => $row->textHeading,
+                                        'textBackground' => $row->textBackground,
+                                        'slideImage' => $row->slideImage,
+                                        'slideColor' => $row->slideColor->value,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'imageSlider',
+                                    'sliderTitle' => $block->sliderTitle,
+                                    'sliderMatrix' => $SuperTableRows,
+                                ];
+                                break;
                             // case 'text':
                             //     $bodyBlocks[] = [
                             //         'uid' => $block->uid,

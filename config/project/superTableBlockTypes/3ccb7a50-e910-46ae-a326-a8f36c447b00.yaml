@@ -1,0 +1,219 @@
+field: 27393bd5-1723-45d6-b1e6-a5957edeca5d # Slider Matrix
+fieldLayouts:
+  6a0c6459-46af-47bd-863d-e7a608b08c97:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1b5eed3e-7691-43f2-8d7d-28363b0a66e9 # Text Sub
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b2c4073-113f-4ea1-8de2-322c25879d35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d # Text Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d34ef0fb-8c6c-4560-ba1a-df2024ffcfbe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cd28727f-d17b-437b-acea-0a0fe37b567a # Text Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a357789f-ac2c-4f85-8194-c5fcf9ea5ade
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 285e51d1-3aa1-472e-850c-7a5fa2df0e1f # Slide Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4eda4301-7a2b-411f-a9b8-1d0ed3631577
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 68369292-d158-4c74-bf93-5c6b324dd84c # Slide Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9deebfee-ecb8-49aa-8937-81773313acae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7bc30b5b-0b70-482b-a6fc-5830c29ed76e
+        userCondition: null
+fields:
+  1b5eed3e-7691-43f2-8d7d-28363b0a66e9: # Text Sub
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: textSub
+    instructions: null
+    name: 'Text Sub'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d: # Text Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: textHeading
+    instructions: null
+    name: 'Text Heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  285e51d1-3aa1-472e-850c-7a5fa2df0e1f: # Slide Image
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: slideImage
+    instructions: null
+    name: 'Slide Image'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  68369292-d158-4c74-bf93-5c6b324dd84c: # Slide Color
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: slideColor
+    instructions: null
+    name: 'Slide Color'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Gray
+            -
+              - value
+              - gray
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Dark Gray'
+            -
+              - value
+              - dark-gray
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  cd28727f-d17b-437b-acea-0a0fe37b567a: # Text Background
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: textBackground
+    instructions: null
+    name: 'Text Background'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

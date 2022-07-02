@@ -1,0 +1,117 @@
+field: 7f511051-af46-43d3-9ffa-a0259bbd18fa # Blocks
+fieldLayouts:
+  22757993-4bdf-4111-88c9-929ac3265c81:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7242e56b-0b69-4cf9-ab6e-6277fc06f0a2 # Slider Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 295970a9-f096-4052-a911-6adbac97d170
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 27393bd5-1723-45d6-b1e6-a5957edeca5d # Slider Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08a133fd-35c8-4bbd-96df-cb63a111cd89
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e532f4a4-e207-4366-a4eb-8f4b97754f34
+        userCondition: null
+fields:
+  7242e56b-0b69-4cf9-ab6e-6277fc06f0a2: # Slider Title
+    columnSuffix: cjkjpaah
+    contentColumnType: text
+    fieldGroup: null
+    handle: sliderTitle
+    instructions: null
+    name: 'Slider Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  27393bd5-1723-45d6-b1e6-a5957edeca5d: # Slider Matrix
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: sliderMatrix
+    instructions: null
+    name: 'Slider Matrix'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 496400181
+      columns:
+        __assoc__:
+          -
+            - 1b5eed3e-7691-43f2-8d7d-28363b0a66e9 # Text Sub
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d # Text Heading
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - cd28727f-d17b-437b-acea-0a0fe37b567a # Text Background
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 285e51d1-3aa1-472e-850c-7a5fa2df0e1f # Slide Image
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 68369292-d158-4c74-bf93-5c6b324dd84c # Slide Color
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_5_slidermatrix}}'
+      fieldLayout: matrix
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: imageSlider
+name: 'Image Slider'
+sortOrder: 5

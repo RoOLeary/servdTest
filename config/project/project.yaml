@@ -1,23 +1,42 @@
-dateModified: 1656187965
+dateModified: 1656776625
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1b5eed3e-7691-43f2-8d7d-28363b0a66e9: 'Text Sub' # Text Sub
     03d4e97c-035f-4215-8ed6-e8746e91d790: Home # Home
+    3d681709-e294-426a-ac4c-8c70761559c8: Header # Header
     5c6af0ff-a3b3-47a3-9320-5dfc5d87782a: Heading # Heading
+    005fe649-5c90-4c31-ba88-a0ca0e9b4faf: Pages # Pages
     5ff08539-481e-4862-8dec-aa786e6170c0: 'Home Intro' # Home Intro
+    7c6328bf-ece2-4e54-97b1-4ac2218c9a3d: Headline # Headline
     7f511051-af46-43d3-9ffa-a0259bbd18fa: Blocks # Blocks
     8e5b45c8-ee87-45ca-9bb0-d487dc8d6d89: Common # Common
+    47a9ad67-a187-4b94-bb62-9b4b3fc40e9b: Video
     78fa9290-330f-4a05-b203-2897a1becde7: Homepage # Homepage
+    79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d: 'Text Heading' # Text Heading
+    84fc8c91-214d-4e5f-a1d3-a391f4c1ca9f: 'Video Title'
+    285e51d1-3aa1-472e-850c-7a5fa2df0e1f: 'Slide Image' # Slide Image
+    465a7bdd-6001-43cf-a298-ebf89efee497: 'Image Slider' # Image Slider
+    7242e56b-0b69-4cf9-ab6e-6277fc06f0a2: 'Slider Title' # Slider Title
+    27393bd5-1723-45d6-b1e6-a5957edeca5d: 'Slider Matrix' # Slider Matrix
+    64004c0e-ed92-4760-beb5-33ff9c04a808: Pages # Pages
+    5948548d-5673-45d3-ac39-d6905acb7821: 'Sub Heading' # Sub Heading
     8757594e-e3ec-4549-a2e2-4c2d22c010b1: 'Public Schema' # Public Schema
     30092255-4f34-4764-910d-5eb813a490ba: 'Component Two' # Component Two
+    68369292-d158-4c74-bf93-5c6b324dd84c: 'Slide Color' # Slide Color
     a09cd195-6ca6-450b-84ee-dc2e3c83ddf7: 'Servd Test' # Servd Test
     a3cc9794-e75d-4518-a9b8-5d8f50e49c6b: Heading # Heading
+    a76a2107-7401-4832-8917-87f0cff29846: Hero # Hero
+    b213877f-9e92-461d-b918-67d4da9ac51b: Heading # Heading
     bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: 'Servd Test' # Servd Test
+    c0124204-08aa-4604-b0a9-5c52c2eb9d2a: Eyebrow # Eyebrow
     c6069214-1223-40bc-8630-f90df546e67a: Homepage # Homepage
+    cd28727f-d17b-437b-acea-0a0fe37b567a: 'Text Background' # Text Background
     e64ce7fe-9f0f-4dd4-a019-f28847f405ab: 'Component One' # Component One
+    f83e2506-c0b6-49e5-a16e-3581ba01032a: 'Video Embed Code'
 plugins:
   element-api:
     edition: standard
