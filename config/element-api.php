@@ -157,6 +157,7 @@ return [
                     return [
                         'title' => $entry->headline,
                         'category' => $relatedArticles,
+                        'catId' => $articleCategory,
                         'jsonUrl' => UrlHelper::url("/api/articles/{$entry->slug}.json"),
                     
                     ];
@@ -185,6 +186,7 @@ return [
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
                         'category' => $relatedArticles,
+                        'catId' => $articleCategory,
                         'jsonUrl' => UrlHelper::url("/api/category/{$entry->slug}.json"),
                     
                     ];
