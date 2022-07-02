@@ -147,9 +147,45 @@ return [
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
 
+                    $articleCategory = $entry->category->one()->id;
+                    $relatedArticles = Entry::find()
+                        ->section('articles')
+                        ->relatedTo($articleCategory)
+                        ->limit(10)
+                        ->all();
+
                     return [
                         'title' => $entry->headline,
+                        'category' => $relatedArticles,
                         'jsonUrl' => UrlHelper::url("/api/articles/{$entry->slug}.json"),
+                    
+                    ];
+                },
+            ];
+        },
+
+        'api/category/tech.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['section' => 'articles', 'relatedTo' => 76],
+                'elementsPerPage' => 10,
+                'transformer' => function(Entry $entry) {
+
+                    $articleCategory = $entry->category->one()->id;
+                    $relatedArticles = Entry::find()
+                        ->section('articles')
+                        ->relatedTo($articleCategory)
+                        ->limit(10)
+                        ->one()
+                        ->slug; 
+
+                    return [
+                        'title' => $entry->headline,
+                        'subHeadline' => $entry->subHeadline,
+                        'body' => $entry->articleBody,
+                        'category' => $relatedArticles,
+                        'jsonUrl' => UrlHelper::url("/api/category/{$entry->slug}.json"),
                     
                     ];
                 },
@@ -287,7 +323,7 @@ return [
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
                         'category' => $entry->category->one()->slug,
-                        'related' => $entry->manualRelatedEntries->all() ? $entry->manualRelatedEntries->all() : [],
+                        'related' => $entry->manualRelatedEntries->one()->title ? $entry->manualRelatedEntries->one()->title : [],
                         'blocks' => $bodyBlocks,
                         'jsonUrl' => UrlHelper::url("/api/articles/{$entry->slug}.json"),
                        
