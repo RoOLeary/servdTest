@@ -37,5 +37,34 @@ return [
                 },
             ];
         },
+        'api/articles.json' => function() {
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['section' => 'articles'],
+                'transformer' => function(Entry $entry) {
+                    return [
+                        'title' => $entry->title,
+                        'url' => $entry->url,
+                        'jsonUrl' => UrlHelper::url("articles/{$entry->slug}.json"),
+                        'summary' => $entry->summary,
+                    ];
+                },
+            ];
+        },
+        'api/articles/<slug:\d+>.json' => function($slug) {
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['slug' => $slug],
+                'one' => true,
+                'transformer' => function(Entry $entry) {
+                    return [
+                        'title' => $entry->title,
+                        'url' => $entry->url,
+                        // 'summary' => $entry->summary,
+                        // 'body' => $entry->body,
+                    ];
+                },
+            ];
+        },
     ]
 ];
