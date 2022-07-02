@@ -165,7 +165,6 @@ return [
             ];
         },
 
-
         'api/category/tech.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
@@ -197,9 +196,9 @@ return [
 
         'api/category/<slug:{slug}>.json' => function($slug) {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
-            $slugQuery = \craft\elements\Category::find($slug);
-            // var_dump($slugQuery);
-            // die();
+            $slugQuery = 83;
+            // s$categoryId = $slugQuery->catId;
+
             return [
                 'elementType' => Entry::class,
                 'criteria' => ['section' => 'articles', 'relatedTo' => [ 'targetElement' => $slugQuery ] ],
@@ -211,15 +210,14 @@ return [
                         ->section('articles')
                         ->relatedTo($articleCategory)
                         ->limit(10)
-                        ->one()
-                        ->slug; 
+                        ->all();
 
                     return [
                         'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
-                        // 'category' => $relatedArticles,
+                        'category' => $relatedArticles,
                         'catId' => $articleCategory,
                         'jsonUrl' => UrlHelper::url("/api/category/{$entry->slug}.json"),
                     
@@ -227,7 +225,6 @@ return [
                 },
             ];
         },
-
 
         'api/articles/<slug:{slug}>.json' => function($slug) {
             return [
