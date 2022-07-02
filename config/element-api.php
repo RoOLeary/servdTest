@@ -173,7 +173,7 @@ return [
                 'criteria' => ['section' => 'articles', 'relatedTo' => 280],
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
-
+                    
                     $articleCategory = $entry->category->one()->id;
                     $relatedArticles = Entry::find()
                         ->section('articles')
@@ -196,11 +196,14 @@ return [
             ];
         },
 
-        'api/category/<slug:{slug}>.json' => function() {
+        'api/category/<slug:{slug}>.json' => function($slug) {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            $slugQuery = \craft\elements\Category::find($slug);
+            // var_dump($slugQuery);
+            // die();
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'articles', 'relatedTo' => 295 ],
+                'criteria' => ['section' => 'articles', 'relatedTo' => [ 'targetElement' => $slugQuery ] ],
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
 
