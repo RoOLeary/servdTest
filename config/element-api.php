@@ -211,14 +211,15 @@ return [
                         ->section('articles')
                         ->relatedTo($articleCategory)
                         ->limit(10)
-                        ->all();
+                        ->one()
+                        ->slug; 
 
                     return [
                         'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
-                        'category' => $relatedArticles,
+                        // 'category' => $relatedArticles,
                         'catId' => $articleCategory,
                         'jsonUrl' => UrlHelper::url("/api/category/{$entry->slug}.json"),
                     
