@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  502a3261-54d8-460e-b304-b46a2492f564:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 85777bc5-7053-49d7-8b83-e733fbbe9fa6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 067bf791-84e8-4daf-83bc-837b4fd363ae
+        userCondition: null
+handle: editorial
+name: Editorial
+siteSettings:
+  bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
+    hasUrls: true
+    template: null
+    uriFormat: 'editorial/{slug}'
+structure:
+  maxLevels: null
+  uid: 82c8e1d7-7ab5-4f52-af72-829a987409f7

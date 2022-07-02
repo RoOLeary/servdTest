@@ -1,4 +1,4 @@
-dateModified: 1656778084
+dateModified: 1656779233
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
@@ -11,35 +11,44 @@ meta:
     5c6af0ff-a3b3-47a3-9320-5dfc5d87782a: Heading # Heading
     005fe649-5c90-4c31-ba88-a0ca0e9b4faf: Pages # Pages
     5ff08539-481e-4862-8dec-aa786e6170c0: 'Home Intro' # Home Intro
+    6b021263-d146-478f-a363-1b05c0134138: Articles # Articles
     7c6328bf-ece2-4e54-97b1-4ac2218c9a3d: Headline # Headline
     7f511051-af46-43d3-9ffa-a0259bbd18fa: Blocks # Blocks
+    8a3035bf-54fb-4b3d-a50c-aa0b469ed0d0: 'Article Body' # Article Body
     8e5b45c8-ee87-45ca-9bb0-d487dc8d6d89: Common # Common
+    9cc390bc-51d6-4352-b961-a629bb77d346: 'Manual Related Entries' # Manual Related Entries
     47a9ad67-a187-4b94-bb62-9b4b3fc40e9b: Video # Video
-    68f49541-781b-46d3-8b29-c868d5f18eae: 'Faq Heading'
+    58fcc103-a83c-43b1-865a-86f743101c0d: Editorial # Editorial
+    68f49541-781b-46d3-8b29-c868d5f18eae: 'Faq Heading' # Faq Heading
     78fa9290-330f-4a05-b203-2897a1becde7: Homepage # Homepage
     79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d: 'Text Heading' # Text Heading
     84fc8c91-214d-4e5f-a1d3-a391f4c1ca9f: 'Video Title' # Video Title
     285e51d1-3aa1-472e-850c-7a5fa2df0e1f: 'Slide Image' # Slide Image
-    325aaab7-3516-48fe-9806-7ae36fdf4926: Faq
+    325aaab7-3516-48fe-9806-7ae36fdf4926: Faq # Faq
     465a7bdd-6001-43cf-a298-ebf89efee497: 'Image Slider' # Image Slider
-    3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1: 'Faq Leadtext'
+    3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1: 'Faq Leadtext' # Faq Leadtext
     7242e56b-0b69-4cf9-ab6e-6277fc06f0a2: 'Slider Title' # Slider Title
-    9650dc52-e44c-4eaa-b2b3-43586f2d8e7d: Question
+    9650dc52-e44c-4eaa-b2b3-43586f2d8e7d: Question # Question
     27393bd5-1723-45d6-b1e6-a5957edeca5d: 'Slider Matrix' # Slider Matrix
     64004c0e-ed92-4760-beb5-33ff9c04a808: Pages # Pages
     5948548d-5673-45d3-ac39-d6905acb7821: 'Sub Heading' # Sub Heading
     8757594e-e3ec-4549-a2e2-4c2d22c010b1: 'Public Schema' # Public Schema
-    55194761-393e-4eae-b760-045a3d1ad44d: Answer
+    55194761-393e-4eae-b760-045a3d1ad44d: Answer # Answer
     68369292-d158-4c74-bf93-5c6b324dd84c: 'Slide Color' # Slide Color
     a09cd195-6ca6-450b-84ee-dc2e3c83ddf7: 'Servd Test' # Servd Test
     a3cc9794-e75d-4518-a9b8-5d8f50e49c6b: Heading # Heading
+    a9e715e9-b532-4790-845d-e7aaf40ff21a: Articles # Articles
     a76a2107-7401-4832-8917-87f0cff29846: Hero # Hero
-    b35e421d-7d80-4773-a2fe-b0ec6f77a6d0: Faqs
+    b35e421d-7d80-4773-a2fe-b0ec6f77a6d0: Faqs # Faqs
     b213877f-9e92-461d-b918-67d4da9ac51b: Heading # Heading
     bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: 'Servd Test' # Servd Test
     c0124204-08aa-4604-b0a9-5c52c2eb9d2a: Eyebrow # Eyebrow
+    c983bc2b-9506-4f3b-a79e-36948160dca1: 'Sub Headline' # Sub Headline
     c6069214-1223-40bc-8630-f90df546e67a: Homepage # Homepage
+    cb319f40-f59d-45b6-b88c-3ad489355536: Category # Category
     cd28727f-d17b-437b-acea-0a0fe37b567a: 'Text Background' # Text Background
+    da903d5e-291f-4a50-bce9-f95305d654f0: Headline # Headline
+    eb90cb55-a5b5-4a5f-bfce-72443a040ab3: Articles # Articles
     f83e2506-c0b6-49e5-a16e-3581ba01032a: 'Video Embed Code' # Video Embed Code
 plugins:
   element-api:

@@ -1,4 +1,4 @@
-field: b35e421d-7d80-4773-a2fe-b0ec6f77a6d0
+field: b35e421d-7d80-4773-a2fe-b0ec6f77a6d0 # Faqs
 fieldLayouts:
   1daabafe-0410-43ab-a7da-87f365fa3a8c:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 9650dc52-e44c-4eaa-b2b3-43586f2d8e7d
+            fieldUid: 9650dc52-e44c-4eaa-b2b3-43586f2d8e7d # Question
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 55194761-393e-4eae-b760-045a3d1ad44d
+            fieldUid: 55194761-393e-4eae-b760-045a3d1ad44d # Answer
             instructions: null
             label: null
             required: false
@@ -33,7 +33,7 @@ fieldLayouts:
         uid: d5008b70-c18f-4a83-8ee7-0c8fe68d6652
         userCondition: null
 fields:
-  9650dc52-e44c-4eaa-b2b3-43586f2d8e7d:
+  9650dc52-e44c-4eaa-b2b3-43586f2d8e7d: # Question
     columnSuffix: symkllnl
     contentColumnType: text
     fieldGroup: null
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  55194761-393e-4eae-b760-045a3d1ad44d:
+  55194761-393e-4eae-b760-045a3d1ad44d: # Answer
     columnSuffix: fvtayyoj
     contentColumnType: text
     fieldGroup: null

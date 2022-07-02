@@ -1,0 +1,19 @@
+columnSuffix: rlbnjrak
+contentColumnType: text
+fieldGroup: eb90cb55-a5b5-4a5f-bfce-72443a040ab3 # Articles
+handle: subHeadline
+instructions: null
+name: 'Sub Headline'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 68f49541-781b-46d3-8b29-c868d5f18eae
+            fieldUid: 68f49541-781b-46d3-8b29-c868d5f18eae # Faq Heading
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1
+            fieldUid: 3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1 # Faq Leadtext
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b35e421d-7d80-4773-a2fe-b0ec6f77a6d0
+            fieldUid: b35e421d-7d80-4773-a2fe-b0ec6f77a6d0 # Faqs
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
         uid: e52117cc-943e-441b-9a33-66af248624ac
         userCondition: null
 fields:
-  68f49541-781b-46d3-8b29-c868d5f18eae:
+  68f49541-781b-46d3-8b29-c868d5f18eae: # Faq Heading
     columnSuffix: yhkyrrrf
     contentColumnType: text
     fieldGroup: null
@@ -65,7 +65,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1:
+  3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1: # Faq Leadtext
     columnSuffix: zgxmvjvo
     contentColumnType: text
     fieldGroup: null
@@ -85,7 +85,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b35e421d-7d80-4773-a2fe-b0ec6f77a6d0:
+  b35e421d-7d80-4773-a2fe-b0ec6f77a6d0: # Faqs
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
