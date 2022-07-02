@@ -183,7 +183,7 @@ return [
                         ->slug; 
 
                     return [
-                        'title' => $entry->slug,
+                        'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
@@ -213,6 +213,7 @@ return [
                         ->slug; 
 
                     return [
+                        'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
