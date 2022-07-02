@@ -169,7 +169,7 @@ return [
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'articles', 'relatedTo' => 76],
+                'criteria' => ['section' => 'articles', 'relatedTo' => 280],
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
 
