@@ -183,6 +183,7 @@ return [
                         ->slug; 
 
                     return [
+                        'title' => $entry->slug,
                         'title' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
@@ -199,7 +200,7 @@ return [
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'articles', 'relatedTo' => 83 ],
+                'criteria' => ['section' => 'articles', 'relatedTo' => 295 ],
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
 
