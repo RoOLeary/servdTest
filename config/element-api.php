@@ -286,6 +286,8 @@ return [
                         'headline' => $entry->headline,
                         'subHeadline' => $entry->subHeadline,
                         'body' => $entry->articleBody,
+                        'category' => $entry->category->one()->slug,
+                        'related' => $entry->manualRelatedEntries->all() ? $entry->manualRelatedEntries->all() : [],
                         'blocks' => $bodyBlocks,
                         'jsonUrl' => UrlHelper::url("/api/articles/{$entry->slug}.json"),
                        
