@@ -13,7 +13,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aeb186e9-2c85-4dcf-9139-1f8c7077db49
+            uid: 08e17b01-bc6f-46c2-8b79-72da1ebafae4
             userCondition: null
             warning: null
             width: 100
@@ -25,7 +25,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ac5fe641-4bdb-4b7e-a61d-049744866c71
+            uid: ff3d91c0-84f1-491b-aece-11c113196b8d
             userCondition: null
             warning: null
             width: 100
@@ -34,7 +34,7 @@ fieldLayouts:
         userCondition: null
 fields:
   9650dc52-e44c-4eaa-b2b3-43586f2d8e7d: # Question
-    columnSuffix: symkllnl
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: question
@@ -54,7 +54,7 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   55194761-393e-4eae-b760-045a3d1ad44d: # Answer
-    columnSuffix: fvtayyoj
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: answer

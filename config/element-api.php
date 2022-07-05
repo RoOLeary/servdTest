@@ -201,7 +201,7 @@ return [
 
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'articles', 'relatedTo' => [ 'targetElement' => $slugQuery ] ],
+                'criteria' => ['section' => 'articles', 'relatedTo' => [ 'targetElement' => $slug ] ],
                 'elementsPerPage' => 10,
                 'transformer' => function(Entry $entry) {
 
@@ -424,7 +424,33 @@ return [
                                     'faqs' => $faqRows
                                 ];
                             break;
-                            
+                            case 'projects':
+                                // $relatedCat = $block->speakerCategory->one()->id;
+                                
+                                $blockProjects = Entry::find()
+                                    ->section('projects')
+                                    // ->relatedTo($relatedCat)
+                                    ->limit(10)
+                                    ->all();
+
+                                
+                                $selectedProjects = [];
+                                    foreach($blockProjects as $proj){
+                                    $selectedProjects[] = [
+                                        'projectName' => $proj->projectName,
+                                        'projectDescription' => $proj->projectDescription,
+                                        'projectImage' => $proj->projectImage,
+                                    ];
+                                }
+
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'projectsHeading' => $block->projectsHeading,
+                                    'projectsLeadText' => $block->projectsLeadText,
+                                    'projects' => $selectedProjects
+                                    
+                                ];
+                                break;
                             // case 'speakers':
                             //     // $selectedSpeakers = [];
                             //     $relatedCat = $block->speakerCategory->one()->id;

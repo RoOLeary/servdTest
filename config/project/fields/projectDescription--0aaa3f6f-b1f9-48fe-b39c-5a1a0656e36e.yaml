@@ -1,0 +1,27 @@
+columnSuffix: ljckgwvx
+contentColumnType: text
+fieldGroup: 08714b7d-940c-4a74-a77c-b3b0b501291f # Projects
+handle: projectDescription
+instructions: null
+name: 'Project Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

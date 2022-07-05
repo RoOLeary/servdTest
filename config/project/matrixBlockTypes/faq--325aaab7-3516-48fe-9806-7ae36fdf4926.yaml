@@ -95,8 +95,24 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 928948559
-      contentTable: '{{%stc_faqs}}'
+      changedFieldIndicator: 1312966682
+      columns:
+        __assoc__:
+          -
+            - 9650dc52-e44c-4eaa-b2b3-43586f2d8e7d # Question
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 55194761-393e-4eae-b760-045a3d1ad44d # Answer
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_7_faqs}}'
       fieldLayout: matrix
       maxRows: null
       minRows: null

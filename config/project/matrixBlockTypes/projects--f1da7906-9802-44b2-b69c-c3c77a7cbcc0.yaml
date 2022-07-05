@@ -1,0 +1,133 @@
+field: 7f511051-af46-43d3-9ffa-a0259bbd18fa # Blocks
+fieldLayouts:
+  2176fece-f934-44f9-b2d7-5d7e7ae738d2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 68a9220d-57c1-4a91-9f5f-3a96814dc849 # Projects Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: beacfbc6-2425-4171-84ad-cd877fcf9f71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eac557aa-7e4a-4805-b2ac-379a194bd9fb # Projects Lead Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31c87a2f-df97-4c96-99ec-b18f3051779e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5ca66616-9e30-4ea9-8e26-1a88078d05e2 # Projects
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79d9dd9d-164b-4958-a291-924d3eb079e3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 05aaaf5c-516c-43e8-a523-8d47713f5b60
+        userCondition: null
+fields:
+  5ca66616-9e30-4ea9-8e26-1a88078d05e2: # Projects
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: projects
+    instructions: null
+    name: Projects
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:0107a999-a341-48d2-bef2-4f71525a4341' # Projects
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  68a9220d-57c1-4a91-9f5f-3a96814dc849: # Projects Heading
+    columnSuffix: bjyzqkqo
+    contentColumnType: text
+    fieldGroup: null
+    handle: projectsHeading
+    instructions: null
+    name: 'Projects Heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  eac557aa-7e4a-4805-b2ac-379a194bd9fb: # Projects Lead Text
+    columnSuffix: dalnnwiz
+    contentColumnType: text
+    fieldGroup: null
+    handle: projectsLeadText
+    instructions: null
+    name: 'Projects Lead Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: projects
+name: Projects
+sortOrder: 6
