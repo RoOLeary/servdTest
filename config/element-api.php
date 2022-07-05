@@ -445,6 +445,7 @@ return [
 
                                 $bodyBlocks[] = [
                                     'uid' => $block->uid,
+                                    'blockType' => 'projects',
                                     'projectsHeading' => $block->projectsHeading,
                                     'projectsLeadText' => $block->projectsLeadText,
                                     'projects' => $selectedProjects
