@@ -32,4 +32,5 @@ return [
 
     'securityKey' => 'cGDaPKL0fbVj3BgJJDGS0XkTLApDIUzM',
     'enableGql' => false,
+    'headlessMode' => true
 ];
