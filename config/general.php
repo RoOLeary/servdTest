@@ -32,5 +32,6 @@ return [
 
     'securityKey' => 'cGDaPKL0fbVj3BgJJDGS0XkTLApDIUzM',
     'enableGql' => false,
-    'headlessMode' => true
+    'headlessMode' => true,
+    'preview_token' => 'f6FQj9g0jSuQZnOSRlAYj761LMa1uSzy'
 ];
