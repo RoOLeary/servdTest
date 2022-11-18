@@ -33,5 +33,10 @@ return [
     'securityKey' => 'cGDaPKL0fbVj3BgJJDGS0XkTLApDIUzM',
     'enableGql' => false,
     'headlessMode' => true,
-    'preview_token' => 'f6FQj9g0jSuQZnOSRlAYj761LMa1uSzy'
+    'preview_token' => 'f6FQj9g0jSuQZnOSRlAYj761LMa1uSzy',
+    'previewIframeResizerOptions' => [
+        'checkOrigin' => [
+            'https://nextjs-docker-tau.vercel.app',
+        ],
+    ],
 ];
