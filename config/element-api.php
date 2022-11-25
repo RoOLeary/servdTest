@@ -151,15 +151,12 @@ return [
             return [
                 'elementType' => Entry::class,
                 'criteria' => ['section' => 'recipes'],
-                'elementsPerPage' => 10,
+                'elementsPerPage' => 20,
                 'transformer' => function(Entry $entry) {
 
                     return [
-                        'slug' => $entry->slug,
                         'title' => $entry->headline,
-                        'articleBody' => $entry->articleBody,
-                        'jsonUrl' => UrlHelper::url("/api/recipes/{$entry->slug}.json"),
-                    
+                        'jsonUrl' => UrlHelper::url("api/recipes/{$entry->slug}.json"),
                     ];
                 },
             ];
@@ -169,10 +166,10 @@ return [
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'recipes', 'relatedTo' => [ 'targetElement' => $slug ] ],
-                'elementsPerPage' => 10,
+                'criteria' => ['slug' => $slug],
+                'one' => true,
                 'transformer' => function(Entry $entry) {
-
+                    
                     return [
                         'slug' => $entry->slug,
                         'title' => $entry->headline,
