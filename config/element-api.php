@@ -164,7 +164,7 @@ return [
             ];
         },
 
-        'api/recipes/<slug:{slug}>.json' => function() {
+        'api/recipes/<slug:{slug}>.json' => function(slug) {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
