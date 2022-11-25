@@ -155,6 +155,7 @@ return [
                 'transformer' => function(Entry $entry) {
 
                     return [
+                        'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'articleBody' => $entry->articleBody,
                         'jsonUrl' => UrlHelper::url("/api/recipes.json"),
