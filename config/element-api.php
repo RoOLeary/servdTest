@@ -158,7 +158,7 @@ return [
                         'slug' => $entry->slug,
                         'title' => $entry->headline,
                         'articleBody' => $entry->articleBody,
-                        'jsonUrl' => UrlHelper::url("/api/recipes.json"),
+                        'jsonUrl' => UrlHelper::url("/api/recipes/{$entry->slug}.json"),
                     
                     ];
                 },
