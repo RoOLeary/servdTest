@@ -48,24 +48,6 @@ return [
                                 ];
                                 break;
                             
-                            // // case 'speakers':
-                            // //     // $selectedSpeakers = [];
-                            // //     $relatedCat = $block->speakerCategory->one()->id;
-                                
-                            // //     // $blockSpeakers = Entry::find()
-                            // //     //     ->section('speakers')
-                            // //     //     ->relatedTo($relatedCat)
-                            // //     //     ->limit(10)
-                            // //     //     ->all();
-
-                                
-                            // //     // $selectedSpeakers = [];
-                            // //     //     foreach($blockSpeakers as $spkr){
-                            // //     //     $selectedSpeakers[] = [
-                            // //     //         'speakerName' => $spkr->speakerName
-                            // //     //     ];
-                            // //     // }
-
                             // //     $bodyBlocks[] = [
                             // //         'heading' => $block->heading,
                             // //         'speakersIntro' => $block->speakersIntro,
@@ -98,35 +80,35 @@ return [
                                     'sliderMatrix' => $SuperTableRows,
                                 ];
                                 break;
-                            // case 'text':
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'text',
-                            //         'headline' => $block->headline,
-                            //         'articleBody' => $block->articleBody,
-                            //     ];
-                            //     break;
-                            // case 'textVisual':
+                            case 'text':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'text',
+                                    'headline' => $block->headline,
+                                    'articleBody' => $block->articleBody,
+                                ];
+                                break;
+                            case 'textVisual':
 
-                            //     $TVButtons = [];
-                            //     foreach ($block->textVisualButtons->all() as $row){
-                            //         $TVButtons[] = [
-                            //             'linkId' => $row->linkId,
-                            //             'linkText' => $row->linkText,
-                            //             'linkUrl' => $row->linkUrl,
-                            //             'isExternal' => $row->target
-                            //         ];
-                            //     }
+                                $TVButtons = [];
+                                foreach ($block->textVisualButtons->all() as $row){
+                                    $TVButtons[] = [
+                                        'linkId' => $row->linkId,
+                                        'linkText' => $row->linkText,
+                                        'linkUrl' => $row->linkUrl,
+                                        'isExternal' => $row->target
+                                    ];
+                                }
 
-                            //     $bodyBlocks[] = [
-                            //         'uid' => $block->uid,
-                            //         'blockType' => 'textVisual',
-                            //         'title' => $block->textVisualTitle,
-                            //         'articleBody' => $block->textVisualContent,
-                            //         'image' => $block->textVisualImage,
-                            //         'buttons' => $TVButtons,
-                            //     ];
-                            //     break;
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'textVisual',
+                                    'title' => $block->textVisualTitle,
+                                    'articleBody' => $block->textVisualContent,
+                                    'image' => $block->textVisualImage,
+                                    'buttons' => $TVButtons,
+                                ];
+                                break;
                         }
                     }
 
@@ -159,6 +141,41 @@ return [
                         'category' => $relatedArticles,
                         'catId' => $articleCategory,
                         'jsonUrl' => UrlHelper::url("/api/articles/{$entry->slug}.json"),
+                    
+                    ];
+                },
+            ];
+        },
+        'api/recipes.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['section' => 'recipes'],
+                'elementsPerPage' => 10,
+                'transformer' => function(Entry $entry) {
+
+                    return [
+                        'title' => $entry->headline,
+                        'articleBody' => $entry->articleBody,
+                        'jsonUrl' => UrlHelper::url("/api/recipes.json"),
+                    
+                    ];
+                },
+            ];
+        },
+
+        'api/recipes/<slug:{slug}>.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['section' => 'recipes'],
+                'elementsPerPage' => 10,
+                'transformer' => function(Entry $entry) {
+
+                    return [
+                        'title' => $entry->headline,
+                        'articleBody' => $entry->articleBody,
+                        'jsonUrl' => UrlHelper::url("/api/recipes/{$entry->slug}.json"),
                     
                     ];
                 },
