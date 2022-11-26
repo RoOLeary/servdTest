@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: articles
-name: Articles
+handle: recipes
+name: Recipes
 previewTargets:
   -
     __assoc__:
@@ -14,22 +14,11 @@ previewTargets:
       -
         - refresh
         - '1'
-  -
-    __assoc__:
-      -
-        - label
-        - Local
-      -
-        - urlFormat
-        - 'http://localhost:3000/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug={slug}'
-      -
-        - refresh
-        - '1'
 propagationMethod: all
 siteSettings:
   bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'articles/{slug}'
+    uriFormat: 'recipes/{slug}'
 type: channel

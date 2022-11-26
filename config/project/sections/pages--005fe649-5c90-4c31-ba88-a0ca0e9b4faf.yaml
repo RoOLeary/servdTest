@@ -7,10 +7,21 @@ previewTargets:
     __assoc__:
       -
         - label
-        - 'Primary entry page'
+        - Production
       -
         - urlFormat
-        - '{url}'
+        - 'https://pixnext-rooleary.vercel.app/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug={slug}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - Local
+      -
+        - urlFormat
+        - 'http://localhost:3000/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug={slug}'
       -
         - refresh
         - '1'
@@ -19,7 +30,7 @@ siteSettings:
   bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
     enabledByDefault: true
     hasUrls: true
-    template: pages/_entry
+    template: null
     uriFormat: 'pages/{slug}'
 structure:
   maxLevels: null

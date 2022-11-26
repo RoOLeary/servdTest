@@ -1,4 +1,4 @@
-dateModified: 1656978907
+dateModified: 1669451377
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
@@ -50,11 +50,13 @@ meta:
     b35e421d-7d80-4773-a2fe-b0ec6f77a6d0: Faqs # Faqs
     b213877f-9e92-461d-b918-67d4da9ac51b: Heading # Heading
     bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: 'Servd Test' # Servd Test
+    be5662cc-960e-40cf-b129-b3283f5ec33a: Recipes # Default
     c0124204-08aa-4604-b0a9-5c52c2eb9d2a: Eyebrow # Eyebrow
     c983bc2b-9506-4f3b-a79e-36948160dca1: 'Sub Headline' # Sub Headline
     c6069214-1223-40bc-8630-f90df546e67a: Homepage # Homepage
     cb319f40-f59d-45b6-b88c-3ad489355536: Category # Category
     cd28727f-d17b-437b-acea-0a0fe37b567a: 'Text Background' # Text Background
+    d111679a-1277-4b40-8262-d777755e94b5: Recipes # Recipes
     da903d5e-291f-4a50-bce9-f95305d654f0: Headline # Headline
     eac557aa-7e4a-4805-b2ac-379a194bd9fb: 'Projects Lead Text' # Projects Lead Text
     eb90cb55-a5b5-4a5f-bfce-72443a040ab3: Articles # Articles
