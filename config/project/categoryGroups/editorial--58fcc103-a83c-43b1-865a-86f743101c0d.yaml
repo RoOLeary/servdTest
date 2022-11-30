@@ -37,6 +37,10 @@ fieldLayouts:
 handle: editorial
 name: Editorial
 siteSettings:
+  102a2f0f-e972-40b4-ae51-c15fb2cdaf03: # Servd Test NL
+    hasUrls: true
+    template: null
+    uriFormat: 'editorial/{slug}'
   bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
     hasUrls: true
     template: null

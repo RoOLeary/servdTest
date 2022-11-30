@@ -10,7 +10,29 @@ previewTargets:
         - Production
       -
         - urlFormat
-        - 'https://pixnext-rooleary.vercel.app/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug={slug}'
+        - 'https://pixnext-rooleary.vercel.app/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug=recipes/{slug}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - Local
+      -
+        - urlFormat
+        - 'http://localhost:3000/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug=recipes/{slug}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - AWS
+      -
+        - urlFormat
+        - 'https://production.dioy5gcvj0xuv.amplifyapp.com/api/preview?token=WxQXrQAuWGI1LvhIKpXjSGESi8ff8NcjjmMNiQZVB7H6pml6uRVNcoCL0ZQEcwQv&canonicalId&slug=recipes/{slug}'
       -
         - refresh
         - '1'

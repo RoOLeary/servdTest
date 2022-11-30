@@ -19,11 +19,11 @@
         "rss": "https://craftcms.com/changelog.rss"
     },
     "require": {
-        "craftcms/cms": "4.2.0.2",
+        "craftcms/cms": "4.3.3",
         "craftcms/element-api": "3.0.1.1",
         "craftcms/redactor": "3.0.2",
-        "servd/craft-asset-storage": "3.0.5",
-        "verbb/super-table": "3.0.0",
+        "servd/craft-asset-storage": "3.1.8",
+        "verbb/super-table": "3.0.5",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
