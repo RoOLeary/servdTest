@@ -1,4 +1,4 @@
-dateModified: 1669451377
+dateModified: 1669768526
 email:
   fromEmail: roleary81@gmail.com
   fromName: 'Servd Test'
@@ -26,10 +26,12 @@ meta:
     78fa9290-330f-4a05-b203-2897a1becde7: Homepage # Homepage
     79e2cb60-7457-4e0f-b7a5-4f9668a2cd9d: 'Text Heading' # Text Heading
     84fc8c91-214d-4e5f-a1d3-a391f4c1ca9f: 'Video Title' # Video Title
+    102a2f0f-e972-40b4-ae51-c15fb2cdaf03: 'Servd Test NL' # Servd Test NL
     0107a999-a341-48d2-bef2-4f71525a4341: Projects # Projects
     285e51d1-3aa1-472e-850c-7a5fa2df0e1f: 'Slide Image' # Slide Image
     325aaab7-3516-48fe-9806-7ae36fdf4926: Faq # Faq
     465a7bdd-6001-43cf-a298-ebf89efee497: 'Image Slider' # Image Slider
+    679e9e67-264e-4bf6-8844-6c5b3555e1d8: Startpagina # Startpagina
     3604c7ea-ffe5-43ae-a962-f0af9e6cc2e1: 'Faq Leadtext' # Faq Leadtext
     7242e56b-0b69-4cf9-ab6e-6277fc06f0a2: 'Slider Title' # Slider Title
     8066dcda-193e-4ab2-bb27-4ad7407777aa: Projects # Projects
@@ -47,10 +49,11 @@ meta:
     a3cc9794-e75d-4518-a9b8-5d8f50e49c6b: Heading # Heading
     a9e715e9-b532-4790-845d-e7aaf40ff21a: Articles # Articles
     a76a2107-7401-4832-8917-87f0cff29846: Hero # Hero
+    ab452259-2845-4760-9d52-a31ebc520115: Startpagina # Startpagina
     b35e421d-7d80-4773-a2fe-b0ec6f77a6d0: Faqs # Faqs
     b213877f-9e92-461d-b918-67d4da9ac51b: Heading # Heading
     bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: 'Servd Test' # Servd Test
-    be5662cc-960e-40cf-b129-b3283f5ec33a: Recipes # Default
+    be5662cc-960e-40cf-b129-b3283f5ec33a: Recipes # Recipes
     c0124204-08aa-4604-b0a9-5c52c2eb9d2a: Eyebrow # Eyebrow
     c983bc2b-9506-4f3b-a79e-36948160dca1: 'Sub Headline' # Sub Headline
     c6069214-1223-40bc-8630-f90df546e67a: Homepage # Homepage

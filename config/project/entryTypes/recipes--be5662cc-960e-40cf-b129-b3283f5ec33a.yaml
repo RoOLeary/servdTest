@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: __blank__
+            label: null
             max: null
             min: null
             name: null

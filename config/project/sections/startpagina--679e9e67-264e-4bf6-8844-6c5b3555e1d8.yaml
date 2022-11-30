@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: startpagina
+name: Startpagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  102a2f0f-e972-40b4-ae51-c15fb2cdaf03: # Servd Test NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: startpagina
+type: single

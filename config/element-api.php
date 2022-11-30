@@ -5,6 +5,26 @@ use craft\helpers\UrlHelper;
 
 return [
     'endpoints' => [
+
+        'api/nl/startpagina.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['site' => 'servdTestNl', 'section' => 'startpagina'],
+                'transformer' => function(Entry $entry) {
+
+                    
+
+                    return [
+                        'title' => $entry->title,
+                        'headline' => $entry->headline,
+                        'jsonUrl' => UrlHelper::url("startpagina.json"),
+                   ];
+                },
+            ];
+        },
+
+
         'api/homepage.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
