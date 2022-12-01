@@ -24,6 +24,45 @@ return [
             ];
         },
 
+        'api/nl/recipes.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['site' => 'servdTestNl', 'section' => 'recipes'],
+                'transformer' => function(Entry $entry) {
+
+                    return [
+                        'slug' => $entry->slug,
+                        'title' => $entry->title,
+                        'headline' => $entry->headline,
+                        'articleBody' => $entry->articleBody,
+                        'jsonUrl' => UrlHelper::url("/api/recipes.json"),
+                        
+
+                   ];
+                },
+            ];
+        },
+
+        'api/nl/recipes/<slug:{slug}>.json' => function($slug) {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['site' => 'servdTestNl', 'slug' => $slug],
+                'one' => true,
+                'transformer' => function(Entry $entry) {
+                    
+                    return [
+                        'slug' => $entry->slug,
+                        'title' => $entry->headline,
+                        'articleBody' => $entry->articleBody,
+                        'jsonUrl' => UrlHelper::url("/api/recipes/{$entry->slug}.json"),
+                    
+                    ];
+                },
+            ];
+        },
+
 
         'api/homepage.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');

@@ -36,8 +36,13 @@ previewTargets:
       -
         - refresh
         - '1'
-propagationMethod: all
+propagationMethod: none
 siteSettings:
+  102a2f0f-e972-40b4-ae51-c15fb2cdaf03: # Servd Test NL
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
   bb85afe2-0660-40bb-ad67-bfe6b9f6dda0: # Servd Test
     enabledByDefault: true
     hasUrls: true
