@@ -25,6 +25,7 @@ return [
         },
 
         'api/nl/recipes.json' => function() {
+            // dd($locale);
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
@@ -48,7 +49,7 @@ return [
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['site' => 'servdTestNl', 'slug' => $slug],
+                'criteria' => ['site' => 'servdTestNl', 'section' => 'recipes'],
                 'one' => true,
                 'transformer' => function(Entry $entry) {
                     
@@ -63,6 +64,184 @@ return [
             ];
         },
 
+        'api/nl/pages.json' => function() {
+            \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['site' => 'servdTestNl', 'section' => 'pages'],
+                'elementsPerPage' => 20,
+                'transformer' => function(Entry $entry) {
+
+                    return [
+                        'slug' => $entry->slug,
+                        'title' => $entry->title,
+                        'headline' => $entry->headline,
+                        'articleBody' => $entry->articleBody,
+                        'jsonUrl' => UrlHelper::url("api/nl/pages/{$entry->slug}.json"),
+                    ];
+                },
+            ];
+        },
+
+        'api/nl/pages/<slug:{slug}>.json' => function($slug) {
+            return [
+                'elementType' => Entry::class,
+                'criteria' => ['site' => 'servdTestNl', 'section' => 'pages'],
+                'one' => true,
+                'transformer' => function(Entry $entry) {
+                    
+                    $bodyBlocks = [];
+                    foreach ($entry->pageBlocks->all() as $block) {
+                        switch ($block->type->handle) {
+                            case 'hero':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'hero',
+                                    'eyebrow' => $block->eyebrow,
+                                    'heading' => $block->heading,
+                                    'subHeading' => $block->subHeading
+                                ];
+                            break;
+                            case 'header':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'header',
+                                    'headline' => $block->headline,
+                                ];
+                            break;
+                            case 'faq':
+                                $faqRows = [];
+                                foreach($block->faqs->all() as $row){
+                                    $faqRows[] = [
+                                        'question' => $row->question,
+                                        'answer' => $row->answer,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'faq',
+                                    'faqHeading' => $block->faqHeading,
+                                    'faqLeadtext' => $block->faqLeadtext,
+                                    'faqs' => $faqRows
+                                ];
+                            break;
+                            case 'projects':
+                                // $relatedCat = $block->speakerCategory->one()->id;
+                                
+                                $blockProjects = Entry::find()
+                                    ->section('projects')
+                                    // ->relatedTo($relatedCat)
+                                    ->limit(10)
+                                    ->all();
+
+                                
+                                $selectedProjects = [];
+                                    foreach($blockProjects as $proj){
+                                    $selectedProjects[] = [
+                                        'projectName' => $proj->projectName,
+                                        'projectDescription' => $proj->projectDescription,
+                                        'projectImage' => $proj->projectImage,
+                                    ];
+                                }
+
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'projects',
+                                    'projectsHeading' => $block->projectsHeading,
+                                    'projectsLeadText' => $block->projectsLeadText,
+                                    'projects' => $selectedProjects
+                                    
+                                ];
+                                break;
+                            // case 'speakers':
+                            //     // $selectedSpeakers = [];
+                            //     $relatedCat = $block->speakerCategory->one()->id;
+                                
+                            //     // $blockSpeakers = Entry::find()
+                            //     //     ->section('speakers')
+                            //     //     ->relatedTo($relatedCat)
+                            //     //     ->limit(10)
+                            //     //     ->all();
+
+                                
+                            //     // $selectedSpeakers = [];
+                            //     //     foreach($blockSpeakers as $spkr){
+                            //     //     $selectedSpeakers[] = [
+                            //     //         'speakerName' => $spkr->speakerName
+                            //     //     ];
+                            //     // }
+
+                            //     $bodyBlocks[] = [
+                            //         'heading' => $block->heading,
+                            //         'speakersIntro' => $block->speakersIntro,
+                            //         // 'speakers' => $selectedSpeakers
+                            //     ];
+                            //     break;
+                            case 'video':
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'video',
+                                    'videoTitle' => $block->videoTitle,
+                                    'videoEmbedCode' => $block->videoEmbedCode,
+                                ];
+                            break;
+                            case 'imageSlider':
+                                $SuperTableRows = [];
+                                foreach ($block->sliderMatrix->all() as $row){
+                                    $SuperTableRows[] = [
+                                        'textSub' => $row->textSub,
+                                        'textHeading' => $row->textHeading,
+                                        'textBackground' => $row->textBackground,
+                                        'slideImage' => $row->slideImage,
+                                        'slideColor' => $row->slideColor->value,
+                                    ];
+                                }
+                                $bodyBlocks[] = [
+                                    'uid' => $block->uid,
+                                    'blockType' => 'imageSlider',
+                                    'sliderTitle' => $block->sliderTitle,
+                                    'sliderMatrix' => $SuperTableRows,
+                                ];
+                            break;
+                            // case 'text':
+                            //     $bodyBlocks[] = [
+                            //         'uid' => $block->uid,
+                            //         'blockType' => 'text',
+                            //         'headline' => $block->headline,
+                            //         'articleBody' => $block->articleBody,
+                            //     ];
+                            // break;
+                            // case 'textVisual':
+
+                            //     $TVButtons = [];
+                            //     foreach ($block->textVisualButtons->all() as $row){
+                            //         $TVButtons[] = [
+                            //             'linkId' => $row->linkId,
+                            //             'linkText' => $row->linkText,
+                            //             'linkUrl' => $row->linkUrl,
+                            //             'isExternal' => $row->target
+                            //         ];
+                            //     }
+                            //     $bodyBlocks[] = [
+                            //         'uid' => $block->uid,
+                            //         'blockType' => 'textVisual',
+                            //         'title' => $block->textVisualTitle,
+                            //         'articleBody' => $block->textVisualContent,
+                            //         'image' => $block->textVisualImage,
+                            //         'buttons' => $TVButtons,
+                            //     ];
+                            // break;
+                        }
+                    }
+
+                    return [
+                        'title' => $entry->title,
+                        'pageBlocks' => $bodyBlocks, 
+                        'jsonUrl' => UrlHelper::url("api/pages/{$entry->slug}.json"),           
+                    ];
+                },
+            ];
+        },
 
         'api/homepage.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
@@ -205,7 +384,7 @@ return [
                 },
             ];
         },
-        'api/recipes.json' => function() {
+        'api/en/recipes.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
@@ -223,7 +402,7 @@ return [
             ];
         },
 
-        'api/recipes/<slug:{slug}>.json' => function($slug) {
+        'api/en/recipes/<slug:{slug}>.json' => function($slug) {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
