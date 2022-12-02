@@ -622,26 +622,26 @@ return [
             ];
         },
 
-        'api/pages.json' => function() {
+        'api/en/pages.json' => function() {
             \Craft::$app->response->headers->set('Access-Control-Allow-Origin', '*');
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'pages'],
+                'criteria' => ['site' => 'default', 'section' => 'pages'],
                 'elementsPerPage' => 20,
                 'transformer' => function(Entry $entry) {
 
                     return [
                         'title' => $entry->headline,
-                        'jsonUrl' => UrlHelper::url("api/pages/{$entry->slug}.json"),
+                        'jsonUrl' => UrlHelper::url("api/en/pages/{$entry->slug}.json"),
                     ];
                 },
             ];
         },
 
-        'api/pages/<slug:{slug}>.json' => function($slug) {
+        'api/en/pages/<slug:{slug}>.json' => function($slug) {
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['slug' => $slug],
+                'criteria' => ['site' => 'default', 'slug' => $slug],
                 'one' => true,
                 'transformer' => function(Entry $entry) {
                     
